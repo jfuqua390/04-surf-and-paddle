@@ -61,6 +61,7 @@
   margin: auto;
   padding: 2rem 0rem;
   justify-content: space-around;
+  border-bottom: 1px solid gray;
 }
 
 
@@ -149,3 +150,5 @@
   align-self: flex-start;
   padding: 2rem 0rem 0rem 0rem;
 }
+
+/*Footer Styling*/

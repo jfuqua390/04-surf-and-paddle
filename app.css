@@ -9,7 +9,8 @@
 }
 
 .header {
-  background: green;
+  background-image: url(http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/crashing-sea-waves-dolphins-high-definition-wallpaper.jpg);
+  background-size: 100% 100%;
   width: 100%;
   display: flex;
   flex-direction: column;
@@ -23,25 +24,25 @@
 }
 
 .header_title {
-  background: pink;
+  /*background: pink;*/
   align-self: center;
   padding: 3rem 3rem 0rem;
 }
 
 .header_sub-title {
   align-self: center;
-  padding: .2rem 0rem 3rem;
+  padding: .2rem 0rem 5rem;
 }
 
 .navbar_logo {
-  background: blue;
+  /*background: blue;*/
   flex-grow: 3;
   margin: 0 2rem;
 }
 
 .navbar_search_about {
   flex-grow: 1;
-  background: yellow;
+  /*background: yellow;*/
   display: flex;
 
 }
@@ -61,7 +62,7 @@
   margin: auto;
   padding: 2rem 0rem;
   justify-content: space-around;
-  border-bottom: 1px solid gray;
+  /*border-bottom: 1px solid gray;*/
 }
 
 
@@ -152,3 +153,71 @@
 }
 
 /*Footer Styling*/
+.footer {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-top: 1px solid gray;
+}
+
+.footer_title {
+  color: #416691;
+  font-variant: small-caps;
+}
+
+.footer_row1 {
+  display: flex;
+  width: 100%;
+
+}
+
+.footer_row1_column {
+  min-height: 10rem;
+  background-image: url(http://placebear.com/200/200);
+  border: 1px solid black;
+  display: flex;
+  align-items: flex-end;
+}
+
+.footer_post_text {
+  font-weight: 500;
+  color: white;
+}
+
+.footer_row2 {
+  display: flex;
+  width: 100%;
+  justify-content: space-around;
+  background: #3f4ca7;
+  padding: 1rem;
+}
+
+.footer_logo {
+  /*background: green;*/
+  display: flex;
+  align-items: center;
+}
+
+.footer_logo_img {
+  max-width: 1.5rem;
+}
+
+.footer_logo_text {
+  color: #c9c9c9;
+  font-size: .5rem;
+  margin-left: .5rem;
+}
+
+.footer_nav {
+  /*background: blue;*/
+  display: flex;
+  align-items: center;
+}
+
+.footer_nav_text {
+  font-size: .5rem;
+  border-left: 1px solid #c9c9c9;
+  padding: .5rem;
+  color: #c9c9c9;
+}

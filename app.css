@@ -1,8 +1,54 @@
 * {
   box-sizing: border-box;
   margin: 0;
+  font-family: sans-serif;
 }
 
 *::before, *::after {
   box-sizing: inherit;
+}
+
+.header {
+  background: green;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+
+}
+
+.header_navbar {
+  display:flex;
+
+}
+
+.header_title {
+  background: pink;
+  align-self: center;
+  padding: 3rem 3rem 0rem;
+}
+
+.header_sub-title {
+  align-self: center;
+  padding: .2rem 0rem 3rem;
+}
+
+.navbar_logo {
+  background: blue;
+  flex-grow: 3;
+  margin: 0 2rem;
+}
+
+.navbar_search_about {
+  flex-grow: 1;
+  background: yellow;
+  display: flex;
+
+}
+
+.navbar_about {
+  margin: 0 .5rem;
+}
+
+.navbar_search {
+
 }

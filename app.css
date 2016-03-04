@@ -8,60 +8,112 @@
   box-sizing: inherit;
 }
 
+.total {
+  display: flex;
+  flex-direction: column;
+}
+
 .header {
-  background-image: url(http://www.hdwallpaperscool.com/wp-content/uploads/2015/02/crashing-sea-waves-dolphins-high-definition-wallpaper.jpg);
+  background-image: url(http://www.crestingwave.com/sites/default/files/splashimages/wave7.png);
+  /*filter: blur(5px);
+    -webkit-filter: blur(5px);*/
   background-size: 100% 100%;
+  background-position: center;
+  position: relative;
   width: 100%;
   display: flex;
   flex-direction: column;
-
+  z-index: -1;
 }
 
+.header:before {
+  content: '';
+   position: absolute;
+   top: 0;
+   left: 0;
+   bottom: 0;
+   right: 0;
+   background: rgba(63, 76, 167, 0.7);
+
+}
 
 .header_navbar {
   display:flex;
-
+  padding: 1rem;
+  padding-left: 15vw;
+  z-index: 1;
+  align-items: center;
 }
 
-.header_title {
-  /*background: pink;*/
-  align-self: center;
-  padding: 3rem 3rem 0rem;
-}
-
-.header_sub-title {
-  align-self: center;
-  padding: .2rem 0rem 5rem;
-}
 
 .navbar_logo {
   /*background: blue;*/
   flex-grow: 3;
-  margin: 0 2rem;
+  /*padding-left: 15vw;*/
+  display: flex;
+  align-items: center;
+}
+
+.navbar_logo_img {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 1.5rem;
+  border: .1rem solid black;
+}
+
+.navbar_logo_text {
+  color: #040236;
+  padding-left: .5rem;
+  font-weight: normal;
+
+}
+.header_title {
+  /*background: pink;*/
+  color: #dddddd;
+  font-size: 500%;
+  font-weight: normal;
+  text-transform: uppercase;
+  text-shadow: .2rem .2rem #01010b;
+  align-self: center;
+  padding: 3rem 3rem 0rem;
+  z-index: 1;
+}
+
+.header_sub-title {
+  align-self: center;
+  color: #040236;
+  padding: .7rem 0rem 7rem;
+  z-index: 1;
 }
 
 .navbar_search_about {
   flex-grow: 1;
   /*background: yellow;*/
   display: flex;
-
+  text-transform: uppercase;
+  color: #040236;
+  text-shadow: .02rem .02rem #020500;
 }
 
 .navbar_about {
-  margin: 0 .5rem;
+  margin: 0 .8rem;
 }
 
 .navbar_search {
 
 }
 
+.search_icon {
+  padding-left: .4rem;
+}
 
 .main {
+  /*background: yellow;*/
   width: 75%;
   display: flex;
   margin: auto;
   padding: 2rem 0rem;
-  justify-content: space-around;
+
   /*border-bottom: 1px solid gray;*/
 }
 
@@ -69,9 +121,21 @@
 /*Left column styling*/
 .main_left {
   /*background: red;*/
-  padding: 0rem 3rem 3rem 0rem;
+  /*padding: 0rem 3rem 3rem 0rem;*/
   display: flex;
   flex-direction: column;
+  flex-basis: 70%;
+  /*min-width: 30rem;*/
+  /*flex-grow: 1;*/
+}
+
+.main_right {
+  /*background: green;*/
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  flex-basis: 30%;
+  /*flex-grow: 1;*/
 }
 
 .auth_pub_info {
@@ -104,17 +168,13 @@
 
 .left_quote {
   padding: .5rem;
+  color: #4161d5;
   border-left: 1px solid black;
   margin: 1rem;
 }
 
 /*Starting right column (sidebar) styling */
-.main_right {
-  /*background: green;*/
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+
 
 .auth_img {
   width: 5rem;
@@ -132,6 +192,10 @@
   width: 65%;
   justify-content: space-around;
   color: #b3b3b3;
+}
+
+.social_links_desc {
+  color: gray;
 }
 
 .ad {
@@ -157,7 +221,7 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  width: 100%;
+  width: 100vw;
   border-top: 1px solid gray;
 }
 
@@ -169,20 +233,33 @@
 .footer_row1 {
   display: flex;
   width: 100%;
-
+  height: 15rem;
+  overflow: auto;
 }
 
 .footer_row1_column {
-  min-height: 10rem;
-  background-image: url(http://placebear.com/200/200);
-  border: 1px solid black;
-  display: flex;
-  align-items: flex-end;
+  width: 25%;
+  /*border: 1px solid black;*/
+  position: relative;
+  overflow: hidden;
+  float: left;
+}
+
+.footer_post_img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: -1;
 }
 
 .footer_post_text {
-  font-weight: 500;
-  color: white;
+  max-width: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: 1;
 }
 
 .footer_row2 {

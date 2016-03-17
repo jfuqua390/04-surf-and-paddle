@@ -38,10 +38,15 @@
 }
 
 .header_navbar {
-  display:flex;
+  width: 75%;
   padding: 1rem;
-  padding-left: 15vw;
   z-index: 1;
+  margin: auto;
+}
+
+.navbar__row {
+  /*background: green;*/
+  display:flex;
   align-items: center;
 }
 

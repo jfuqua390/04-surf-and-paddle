@@ -11,6 +11,7 @@
 .total {
   display: flex;
   flex-direction: column;
+  width: 100%;
 }
 
 .header {
@@ -80,7 +81,7 @@
   text-transform: uppercase;
   text-shadow: .2rem .2rem #01010b;
   align-self: center;
-  padding: 3rem 3rem 0rem;
+  padding: 3rem 0rem 0rem;
   z-index: 1;
 }
 
